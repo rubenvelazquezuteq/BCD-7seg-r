@@ -1,10 +1,10 @@
 # Tiny Tapeout project information
 project:
-  title:        ""      # Project title
-  author:       ""      # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  ""      # One line description of what your project does
-  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  title:        "BCD a 7 segmentos (demo de flujo)"
+  author:       "Ruben VH"
+  discord:      ""
+  description:  "Decodificador BCD a display de 7 segmentos: ui_in[3:0] = dígito, uo_out[6:0] = segmentos."
+  language:     "Verilog"
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 340x160 uM.
@@ -23,25 +23,24 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: ""
+  ui[0]: "D0"
+  ui[1]: "D1"
+  ui[2]: "D2"
+  ui[3]: "D3"
   ui[4]: ""
   ui[5]: ""
   ui[6]: ""
   ui[7]: ""
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
-
+  uo[0]: "SEG_A"
+  uo[1]: "SEG_B"
+  uo[2]: "SEG_C"
+  uo[3]: "SEG_D"
+  uo[4]: "SEG_E"
+  uo[5]: "SEG_F"
+  uo[6]: "SEG_G"
+  uo[7]: "INV"
   # Bidirectional pins
   uio[0]: ""
   uio[1]: ""
